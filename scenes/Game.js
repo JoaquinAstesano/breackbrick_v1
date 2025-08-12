@@ -32,6 +32,8 @@ export default class Game extends Phaser.Scene {
     this.ball.setCollideWorldBounds(true);
     this.ball.setBounce(1, 1);
     this.ball.setVelocity(150, -200);
+    this.ball.body.allowGravity = false; 
+
 
     // Paleta (rectángulo blanco)
     this.paddle = this.add.rectangle(400, 570, 100, 20, 0xffffff);
